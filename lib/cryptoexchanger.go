@@ -9,7 +9,7 @@ import (
 const split70val float64 = 0.7
 const split30val float64 = 0.3
 
-func MoneyExchanger(arg string, obj *CryptoResponse, crypto1 string, crypto2 string) (per70OfAmount, per30ofAmount, crypto1Buy, crypto2Buy string) {
+func MoneyExchanger(obj *CryptoResponse, arg string, crypto1 string, crypto2 string) (per70OfAmount, per30ofAmount, crypto1Buy, crypto2Buy string) {
 	if arg == "" || crypto1 == "" || crypto2 == "" || obj == nil {
 		log.Fatal("Exchanger can not proceed with empty value!!!")
 	}
